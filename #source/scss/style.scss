@@ -127,7 +127,6 @@ $colorGreen: #0D5C63;
       justify-content: space-between;
       height: 77px;
     }
-    
   }
   &__logo {
     color: $colorFirst;
@@ -423,10 +422,15 @@ position: relative;
   /* .cards__item */
   &__item {
     height: 100%;
-    transition: all 0.3s ease 0s;
-    &:hover {
+    @media (min-width: 920px) {
+        transition: all 0.3s ease 0s;
+    }
+    @media (min-width: 920px) {
+      &:hover {
       transform: translate(0, -10%);
       transition: all 0.3s ease 0s;
+    }
+    
     }
     & > *:not(:last-child){
       margin: 0 0 10px 0;
@@ -661,10 +665,14 @@ text-align: center;
     display: block;
     padding: 0 0 60% 0;
     transition: all 0.3s ease 0s;
-    &:hover {
+     @media (min-width: 1020px) {
+      &:hover {
       transform: scale(1.1);
       transition: all 0.3s ease 0s;
+      
     }
+     }
+    
   }
   }
 /*=====Company======*/

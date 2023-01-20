@@ -481,18 +481,24 @@ body {
 }
 .cards__item {
   height: 100%;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   padding: 35px;
   -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   background-color: #fff;
 }
-.cards__item:hover {
-  -webkit-transform: translate(0, -10%);
-          transform: translate(0, -10%);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+@media (min-width: 920px) {
+  .cards__item {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media (min-width: 920px) {
+  .cards__item:hover {
+    -webkit-transform: translate(0, -10%);
+            transform: translate(0, -10%);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
 }
 .cards__item > *:not(:last-child) {
   margin: 0 0 10px 0;
@@ -761,11 +767,13 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.item-advice__image:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+@media (min-width: 1020px) {
+  .item-advice__image:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
 }
 
 /*=====Company======*/
